@@ -1,6 +1,6 @@
 from app import app,db
 from app.models import Noodle
-from app.forms import MyForm,ItemEntry
+from app.forms import MyForm, ItemEntry
 from flask import render_template
 
 @app.route('/',methods=["GET", "POST"])

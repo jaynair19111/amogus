@@ -7,4 +7,3 @@ app.config["SECRET_KEY"] = "among us"
 db = SQLAlchemy(app)
 
 from app import routes,models,forms
-#program

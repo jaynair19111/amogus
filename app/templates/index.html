@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-<style>
-    table, td, th {  
-      border: 3px solid #ddd;
-      text-align: left;
-    }
-    
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-    
-    th, td {
-      padding: 15px;
-    }
-    </style>
 <body>
-    <title>
-        Healthy Stuff
-    </title>
-    {% for item in items %}
-    <h1>{{item.name}}</h1>
-    <h1>{{item.description}}</h1>
-    <h1>{{item.spice}}</h1>
-    <h1>{{item.sodium}}</h1>
-    <h1>{{item.price}}</h1>
-    {% endfor %}
+  <table>
+      <thead>
+          <tr>
+              <th>Image</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Spice</th>
+              <th>Sodium</th>
+              <th>Price</th>
+          </tr>
+      </thead>
+      <tbody>
+          {% for item in items %}
+          <tr>
+              <td>{{ item.image}}</td>
+              <td>{{ item.name }}</td>
+              <td>{{ item.description }}</td>
+              <td>{{ item.spice }}</td>
+              <td>{{ item.sodium }}</td>
+              <td>{{ item.price }}</td>
+          </tr>
+          {% endfor %}
+      </tbody>
+  </table>
 </body>
 </html>

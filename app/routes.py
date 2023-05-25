@@ -7,9 +7,4 @@ from flask import render_template
 def home():
     items = Noodle.query.all()
     print(items)
-    return render_template("index.html",items=items)
-
-@app.route('/',methods=["GET", "POST"])
-def login():
-    print("login man")
-    
+    return render_template("index.html",items=items)    

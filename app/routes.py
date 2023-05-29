@@ -14,6 +14,6 @@ def upload():
     form = UploadFileForm()
     if form.validate_on_submit():
         file = form.file.data
-        #file.save(os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(file.filename))) Issue here
+        file.save(os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(file.filename)))
         return "Image has been uploaded"
     return render_template('upload.html', form=form)

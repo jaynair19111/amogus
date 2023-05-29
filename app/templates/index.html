@@ -22,7 +22,7 @@
       <tbody>
           {% for item in items %}
           <tr>
-              <td>{{ item.image}}</td>
+              <td><img src="static/images/{{item.image}}">{{ item.image}}</img></td>
               <td>{{ item.name }}</td>
               <td>{{ item.description }}</td>
               <td>{{ item.spice }}</td>

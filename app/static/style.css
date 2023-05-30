@@ -1,26 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: 'Arvo', serif;
+}
+
 div.posts {
   vertical-align: top;
-  display: inline-block;
-  text-align: center;
-  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
+
+.posts ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.posts ul li {
+  background: rgb(245, 245, 245);
+  list-style: none;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 40px;
+  border: 5px solid #d8d8d8;
+  border-radius: 15px;
+}
+
 img {
   width: 800px;
   height: 800px;
   background-color: grey;
-}
-.caption {
   display: block;
+  margin: 0 auto;
 }
 
-.posts ul li {
-  background: #fff;
-  display: inline;
-  list-style: none;
-  float: left;
-  margin-right: 10px;
-  padding: 0;
-  text-align:center; 
-  color: #000;  
-}
+
+
+
+
+
   

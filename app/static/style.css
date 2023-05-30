@@ -1,18 +1,26 @@
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid rgb(0, 0, 0); 
+div.posts {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+}
+img {
+  width: 800px;
+  height: 800px;
+  background-color: grey;
+}
+.caption {
+  display: block;
 }
 
-th, td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid rgb(0, 0, 0);
-  border-top: 1px solid rgb(0, 0, 0); 
+.posts ul li {
+  background: #fff;
+  display: inline;
+  list-style: none;
+  float: left;
+  margin-right: 10px;
+  padding: 0;
+  text-align:center; 
+  color: #000;  
 }
-
-th {
-  background-color: #f2f2f2;
-}
-
   

@@ -8,29 +8,19 @@
   <title>Document</title>
 </head>
 <body>
-  <table>
-      <thead>
-          <tr>
-              <th>Image</th>
-              <th>Name</th>
-              <th>Description</th>
-              <th>Spice</th>
-              <th>Sodium</th>
-              <th>Price</th>
-          </tr>
-      </thead>
-      <tbody>
-          {% for item in items %}
-          <tr>
-              <td><img src="static/images/{{item.image}}">{{ item.image}}</img></td>
-              <td>{{ item.name }}</td>
-              <td>{{ item.description }}</td>
-              <td>{{ item.spice }}</td>
-              <td>{{ item.sodium }}</td>
-              <td>{{ item.price }}</td>
-          </tr>
-          {% endfor %}
-      </tbody>
-  </table>
+    <div class="posts">
+        <ul>
+            {% for item in items %}
+            <li><img src="static/images/{{item.image}}" width="800" height="800">{{ item.image}}</img>
+                <span>{{ item.name }}</span>
+                <span>{{ item.description }}</span>
+                <span>{{ item.spice }}</span>
+                <span>{{ item.sodium }}</span>
+                <span>{{ item.price }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+  
 </body>
 </html>

@@ -17,3 +17,8 @@ def upload():
         file.save(os.path.join(os.path.abspath(os.path.dirname(__file__)),app.config['UPLOAD_FOLDER'],secure_filename(file.filename)))
         return "Image has been uploaded"
     return render_template('upload.html', form=form)
+
+@app.route("/noodle/<int:id>")
+def noodle(id):
+    return str(id)
+

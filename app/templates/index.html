@@ -3,7 +3,7 @@
     <div class="posts">
         <ul>
             {% for item in items %}
-            <li><img src="static/images/{{item.image}}"></img>
+            <li> <a href="{{url_for('noodle', id=item.id)}}"><img src="static/images/{{item.image}}"></img></a>
                 <span>{{ item.name }}</span>
                 <span>{{ item.description }}</span>
                 <span>{{ item.spice }}</span>
